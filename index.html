@@ -20,15 +20,15 @@
                     <h1 class="text-center text-white mt-4 mb-4">TODOLIST</h1>
                     <div class="listTodos">
                         <ul>
-                            <li>
+                            <li class="py-2" v-for = "task in listTask" >
                                 <div class="form-check form-switch">
                                     <input class="form-check-input" type="checkbox" role="switch"
                                         id="flexSwitchCheckDefault">
-                                    <label class="form-check-label" for="flexSwitchCheckDefault">Learn Javascript
+                                    <label class="form-check-label" for="flexSwitchCheckDefault"> {{ task.text }}
                                     </label>
                                 </div>
                             </li>
-
+<!-- 
                             <li>
                                 <div class="form-check form-switch">
                                     <input class="form-check-input" type="checkbox" role="switch"
@@ -54,7 +54,7 @@
                                     <label class="form-check-label" for="flexSwitchCheckDefault">Learn Vue
                                     </label>
                                 </div>
-                            </li>
+                            </li> -->
 
                         </ul>
 

@@ -32,10 +32,11 @@ const listaToDos = [
     }
 ]
 
-new Vue(
-    {
-        data:{
-            list:listaToDos
-        }
+new Vue({
+el:"#app",
 
-    })
+        data:{
+            listTask:listaToDos,
+        },
+
+    });
